@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metodos para Arreglos</title>
+  </head>
+  <body>
+    <script>
+      var amigos = ["Jhoel", "Cristian", "Jorge", "Freddy"];
+
+      // Metodo Length
+
+      console.log(amigos.length);
+
+      // Metodo Join
+
+      var cadenaTexto = amigos.join("-");
+      console.log(cadenaTexto);
+
+      // Metodo Pop y Push
+
+      amigos.pop();
+      amigos.push("Alex");
+
+      // Metodo Shift y Unshift
+
+      amigos.shift();
+      amigos.unshift("Anto");
+
+      // Metodo Concat
+
+      var amigos2 = ["Lucy", "Oscar"];
+      var amigos3 = ["Leo", "Sara"];
+      var todosAmigos = amigos.concat(amigos2, amigos3);
+
+      // Metodo Sort y Reverse
+
+      // amigos.sort();
+      amigos.reverse();
+    </script>
+  </body>
+</html>

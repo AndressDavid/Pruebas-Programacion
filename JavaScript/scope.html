@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scope en JavaScript</title>
+  </head>
+  <body>
+    <script>
+      // Variable local
+      function saludo() {
+        var texto = "Hola Mundo";
+        console.log(texto);
+      }
+      saludo();
+      console.log(texto);
+      // Variable local con funciones anidadas
+      function saludo() {
+        var texto = "Hola Mundo";
+        function mensaje() {
+          console.log(texto);
+        }
+        mensaje();
+      }
+      saludo();
+      //Variable Global
+      var mensaje = "Hola Mundo";
+      function saludo() {
+        console.log(mensaje);
+        mensaje = "Hola Mundo, Modificado";
+        console.log(mensaje);
+      }
+
+      saludo();
+      function saludo() {
+        var mensaje = "Hola Mundo";
+      }
+
+      saludo();
+      console.log(mensaje);
+      //   (funcion)(){}()
+      (function () {
+        alert("Hola Mundo");
+      })();
+    </script>
+  </body>
+</html>

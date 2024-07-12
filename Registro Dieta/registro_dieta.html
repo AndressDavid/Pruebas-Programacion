@@ -1,0 +1,876 @@
+<html lang="es">
+  <head>
+    <style type="text/css">
+      @charset "UTF-8";
+      [ng\:cloak],
+      [ng-cloak],
+      [data-ng-cloak],
+      [x-ng-cloak],
+      .ng-cloak,
+      .x-ng-cloak,
+      .ng-hide:not(.ng-hide-animate) {
+        display: none !important;
+      }
+      ng\:form {
+        display: block;
+      }
+      .ng-animate-shim {
+        visibility: hidden;
+      }
+      .ng-anchor {
+        position: absolute;
+      }
+    </style>
+    <!-- Cabecera -->
+    <!-- WEB App -->
+    <link rel="manifest" href="manifiest.json.php" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes" />
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Tags de Información -->
+    <meta name="description" content="HCW" />
+    <meta name="google" content="notranslate" />
+    <meta http-equiv="Content-Language" content="en" />
+    <meta http-equiv="Last-Modified" content="Wed, 31 Jan 2024 14:00:00 GMT" />
+    <meta
+      http-equiv="cache-control"
+      content="no-store, no-cache, must-revalidate"
+    />
+    <meta http-equiv="cache-control" content="post-check=0, pre-check=0" />
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="expires" content="Wed, 31 Jan 2024 14:23:55 GMT" />
+    <meta http-equiv="expires" content="-1" />
+
+    <!-- Meta Data -->
+    <meta name="AUTHOR" content="FCS" />
+    <meta name="COPYRIGHT" content="FCS" />
+    <meta name="DC.CREATOR" content="FCS" />
+    <meta name="PUBLISHER" content="FCS" />
+    <meta name="CREATOR" content="FCS" />
+    <meta name="theme-color" content="#ec3a3b" />
+
+    <!-- Meta data dinámicos -->
+    <meta name="ROBOTS" content="INDEX FOLLOW" />
+    <meta name="GOOGLEBOT" content="INDEX FOLLOW" />
+    <meta name="AUDIENCE" content="ALL" />
+    <meta name="RATING" content="GENERAL" />
+    <meta name="DISTRIBUTION" content="GLOBAL" />
+
+    <title>HCW</title>
+    <link rel="icon" href="https://hcwd.shaio.org/publico-ico/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      href="https://hcwd.shaio.org/publico-ico/favicon.ico"
+    />
+    <meta name="theme-color" content="#ec3a3b" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="bootstrap-datepicker.min.css" />
+    <link rel="stylesheet" href="bootstrap-tagsinput.css" />
+    <link rel="stylesheet" type="text/css" href="jquery-confirm.min.css" />
+
+    <!-- Fuentes -->
+    <link rel="stylesheet" href="fontawesome/5.13.1-web/css/all.min.css" />
+
+    <!-- Scripts -->
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="jquery.validate.min.js"></script>
+    <script src="jquery-validation/1.19.3/localization/messages_es.min.js"></script>
+
+    <!-- Script -->
+    <script src="popper.min.js"></script>
+    <script src="tooltip.min.js"></script>
+    <script src="angular.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script type="text/javascript" src="jquery-confirm.min.js"></script>
+    <script type="text/javascript" src="comun.js"></script>
+    <script type="text/javascript" src="modalSesionHCWeb.js"></script>
+
+    <!-- Para cambio de contraseña -->
+  </head>
+  <!-- para cambio de contraseña -->
+  <!-- menu normal -->
+  <body id="main-app-panel" name="main-app-panel" class="h-100">
+    <!-- menu -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+      <div class="navbar-brand overflow-hidden">
+        <img
+          src="https://hcwd.shaio.org/nucleo/publico/imagenes/logo/main-logo-mini.svg"
+          alt="Logo"
+        />
+        HC<sup>W</sup> | Historia Clínica Web
+      </div>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarEspecialidad"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Especialidad</a
+            >
+            <div class="dropdown-menu" aria-labelledby="navbarEspecialidad">
+              <a
+                class="dropdown-item"
+                href="principal?cambioTipo=OTNuRHVNNGUzODBkOUFjVDNET2RTZz09&amp;cambioEspecialidad=eUJTTHhnSjBFdTVqT0lLZmV6cG5FQT09"
+                data-tipo="1"
+                data-especialidad="120"
+                ><span>MÉDICO - CARDIOLOGIA</span></a
+              ><a
+                class="dropdown-item"
+                href="principal?cambioTipo=OTNuRHVNNGUzODBkOUFjVDNET2RTZz09&amp;cambioEspecialidad=bEl2d2E0QVR1VEthQ3VXSE1lbndlUT09"
+                data-tipo="1"
+                data-especialidad="781"
+                ><span>MÉDICO - INFECTOLOGIA</span></a
+              ><a
+                class="dropdown-item"
+                href="principal?cambioTipo=cTJzQjgvZEJiN05YelFHM2pkQXFjZz09&amp;cambioEspecialidad=TEs0MmRqR2o1cjVLWXVtdVUrRHJPQT09"
+                data-tipo="6"
+                data-especialidad="021"
+                ><span>ANESTESIOLOGO - ANESTESIOLOGIA</span></a
+              ><a
+                class="dropdown-item"
+                href="principal?cambioTipo=dmVOVVBvT2NQTDBGMGwwSUtaYzFSUT09&amp;cambioEspecialidad=eFdscjUwSVFwckdwTjNKZE5ORitBdz09"
+                data-tipo="7"
+                data-especialidad="999"
+                ><span
+                  ><i class="fas fa-check pr-2"></i><b>ADMINISTRATIVO</b> -
+                  <b>OTRA ESPECIALIDAD NO CLASIFICADA</b></span
+                ></a
+              ><a
+                class="dropdown-item"
+                href="principal?cambioTipo=b2xQQ3lDNTRuMjlUSFpxS1piMWp3UT09&amp;cambioEspecialidad=ZmhQZTV0VDFKeDhKc0xxRE9CZkpGQT09"
+                data-tipo="10"
+                data-especialidad="291"
+                ><span>FISIOTERAPEUTA - FISIOTERAPIA</span></a
+              ><a
+                class="dropdown-item"
+                href="principal?cambioTipo=aU8yYTNsQVdoaU9ZaTRES0NzNFNrUT09&amp;cambioEspecialidad=dGlzem5kMStXK0d2S096MEY4b0N3UT09"
+                data-tipo="18"
+                data-especialidad="831"
+                ><span>TRABAJADOR(A) SOCIAL - TRABAJO SOCIAL</span></a
+              ><a
+                class="dropdown-item"
+                href="principal?cambioTipo=ckN6Tm1xTnY2N3BYdy96UyswNUE0UT09&amp;cambioEspecialidad=cmJHaUg5OEdBRnZPWmpNdkNEc1oxUT09"
+                data-tipo="91"
+                data-especialidad="003"
+                ><span>ENFERMERA(O) JEFE - ENFERMERA(O) JEFE</span></a
+              >
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="03"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Información Administrativa</a
+            >
+            <div class="dropdown-menu" aria-labelledby="03">
+              <a
+                class="dropdown-item"
+                href="modulo-apertura-salas"
+                data-tipo="pad"
+                >Apertura de Salas</a
+              ><a class="dropdown-item" href="modulo-bitacoras" data-tipo="pad"
+                >Bitácoras</a
+              ><a
+                class="dropdown-item"
+                href="modulo-consultas-as400"
+                data-tipo="pad"
+                >Consultas AS400</a
+              ><a
+                class="dropdown-item"
+                href="modulo-citas-telemedicina"
+                data-tipo="pad"
+                >Gestión de Citas por Telemedicina</a
+              ><a class="dropdown-item" href="modulo-ingresos" data-tipo="pad"
+                >Ingresos</a
+              ><a class="dropdown-item" href="modulo-mipres" data-tipo="pad"
+                >Módulos MiPRES</a
+              ><a
+                class="dropdown-item"
+                href="modulo-importar-as400"
+                data-tipo="pad"
+                >Importar a AS400</a
+              ><a class="dropdown-item" href="modulo-soportescm" data-tipo="pad"
+                >Opciones Radicación</a
+              ><a
+                class="dropdown-item"
+                href="modulo-facturacion"
+                data-tipo="pad"
+                >Módulo Facturación</a
+              ><a
+                class="dropdown-item"
+                href="modulo-pacientes-correo"
+                data-tipo="pad"
+                >Actualizar Correo Pacientes</a
+              >
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="01"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Información Médica</a
+            >
+            <div class="dropdown-menu" aria-labelledby="01">
+              <a class="dropdown-item" href="modulo-documentos" data-tipo="pad"
+                >Libro de HC</a
+              >
+              <div class="dropdown-divider"></div>
+              <a
+                class="dropdown-item"
+                href="modulo-historiaclinica&amp;cp=cex"
+                data-tipo="pad"
+                >HC Consulta Externa</a
+              ><a
+                class="dropdown-item"
+                href="modulo-historiaclinica&amp;cp=hos"
+                data-tipo="pad"
+                >HC Consulta Hospitalizados</a
+              ><a
+                class="dropdown-item"
+                href="modulo-historiaclinica&amp;cp=urg"
+                data-tipo="pad"
+                >HC Consulta Urgencias</a
+              ><a
+                class="dropdown-item"
+                href="modulo-consultaaval"
+                data-tipo="pad"
+                >Registro AVAL</a
+              >
+              <div class="dropdown-divider"></div>
+              <a
+                class="dropdown-item"
+                href="modulo-ordenes-ambulatorias"
+                data-tipo="pad"
+                >Ordenes ambulatorias</a
+              ><a
+                class="dropdown-item"
+                href="modulo-consulta-nutricion"
+                data-tipo="pad"
+                >Ordenes Médicas</a
+              ><a
+                class="dropdown-item"
+                href="modulo-historiaclinica&amp;cp=int"
+                data-tipo="pad"
+                >Interconsultas</a
+              >
+              <div class="dropdown-divider"></div>
+              <a
+                class="dropdown-item"
+                href="modulo-programacion-salas"
+                data-tipo="pad"
+                >Programación Salas</a
+              ><a
+                class="dropdown-item"
+                href="modulo-evoconsulta"
+                data-tipo="pad"
+                >Consulta Evoluciones</a
+              ><a
+                class="dropdown-item"
+                href="modulo-infconsulta"
+                data-tipo="pad"
+                >Consulta PROA</a
+              ><a class="dropdown-item" href="modulo-nutricion" data-tipo="pad"
+                >Nutrición</a
+              >
+              <h6 class="dropdown-header">Enfermería</h6>
+              <a
+                class="dropdown-item"
+                href="modulo-medicamentos-administracion"
+                data-tipo="popup"
+                >Administración de medicamentos</a
+              ><a
+                class="dropdown-item"
+                href="modulo-alerta-temprana"
+                data-tipo="popup"
+                >Alertas tempranas (DSAT)</a
+              ><a class="dropdown-item" href="modulo-signos" data-tipo="popup"
+                >Registro de Signos vitales</a
+              ><a
+                class="dropdown-item"
+                href="modulo-alerta-temprana&amp;p=registroconsulta"
+                data-tipo="popup"
+                >Consulta de valoraciones de signos vitales</a
+              >
+              <h6 class="dropdown-header">Farmacia</h6>
+              <a
+                class="dropdown-item"
+                href="modulo-medicamentos-dispensacion"
+                data-tipo="popup"
+                >Dispensación de medicamentos</a
+              ><a
+                class="dropdown-item"
+                href="modulo-insumos-dispensacion"
+                data-tipo="popup"
+                >Dispensación de insumos</a
+              >
+              <h6 class="dropdown-header">Urgencias</h6>
+              <a class="dropdown-item" href="modulo-triage" data-tipo="popup"
+                >Triage</a
+              ><a
+                class="dropdown-item"
+                href="modulo-censo-pacientes"
+                data-tipo="popup"
+                >Censo pacientes</a
+              ><a
+                class="dropdown-item"
+                href="modulo-historiaclinica&amp;cp=proest"
+                data-tipo="pad"
+                >Procedimientos ordenados</a
+              ><a
+                class="dropdown-item"
+                href="modulo-historiaclinica&amp;cp=ciru"
+                data-tipo="pad"
+                >Realizar Cirugía</a
+              >
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="04"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Enfermería</a
+            >
+            <div class="dropdown-menu" aria-labelledby="04">
+              <a class="dropdown-item" href="modulo-kardex" data-tipo="pad"
+                >Kardex</a
+              >
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="02"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Configuración</a
+            >
+            <div class="dropdown-menu" aria-labelledby="02">
+              <a class="dropdown-item" href="modulo-logs" data-tipo="pad"
+                >Administración de Logs</a
+              ><a class="dropdown-item" href="modulo-tareas" data-tipo="pad"
+                >Administración de Tareas programadas</a
+              ><a class="dropdown-item" href="modulo-usuarios" data-tipo="pad"
+                >Usuarios del sistema</a
+              >
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <nav class="navbar navbar-light bg-light pt-1 pb-1">
+      <div class="navbar-nav">
+        <a
+          class="btn btn-outline-secondary btn-sm"
+          alt="Pagina principal"
+          href="index"
+          data-toggle="tooltip"
+          data-placement="right"
+          title=""
+          data-original-title="Ir a la pagina principal"
+          ><i class="fas fa-home"></i> hcwd.shaio.org</a
+        >
+      </div>
+      <div class="navbar-nav justify-content-end">
+        <div class="btn-group" role="group" aria-label="Opciones de Usuario">
+          <a
+            type="button"
+            class="btn btn-outline-secondary btn-sm"
+            href="modulo-perfil"
+            ><i class="fas fa-user-circle"></i> Andres David Aldana Galindo</a
+          >
+          <a type="button" class="btn btn-outline-secondary btn-sm" href="#"
+            ><i class="fas fa-bell"></i> 0</a
+          >
+          <a
+            type="button"
+            class="btn btn-outline-secondary btn-sm"
+            alt="Cerrar sesionn"
+            href="salir"
+            ><i class="fas fa-power-off"></i> Cerrar sesión</a
+          >
+        </div>
+      </div>
+    </nav>
+    <div id="inner-message" class="alert alert-danger" role="alert">
+      <h6>Historia Clínica Web - Entorno de Pruebas - hcwd.shaio.org</h6>
+    </div>
+    <div class="container-fluid">
+      <div class="card mt-3">
+        <div class="card-header">
+          <h5>Registro de</h5>
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">
+                <a href="modulo-signos&amp;seccion=4P"
+                  ><i class="far fa-building"></i> Volver 4P</a
+                >
+              </li>
+              <li class="breadcrumb-item active" aria-current="page">
+                3495860
+              </li>
+            </ol>
+          </nav>
+          <div class="row">
+            <div class="col"><div id="ingresoInfo"></div></div>
+          </div>
+        </div>
+        <div id="registroDieta" class="card-body">
+          <form
+            role="form"
+            id="registroDietaForm"
+            name="registroDietaForm"
+            method="POST"
+            enctype="application/x-www-form-urlencoded"
+            novalidate="novalidate"
+            action="#"
+            autocomplete="off"
+          >
+            <p>
+              Paciente Ingreso No.
+              <span class="badge badge-success" id="nIngresoMostrar"></span>
+            </p>
+            <input type="hidden" id="cSeccion" name="cSeccion" value="4P" />
+            <input
+              type="hidden"
+              id="cHabitacion"
+              name="cHabitacion"
+              value="0402"
+            />
+            <input
+              type="hidden"
+              id="nIngreso"
+              name="nIngreso"
+              value="3495860"
+            />
+            <input type="hidden" id="cTipoId" name="cTipoId" value="C" />
+            <input type="hidden" id="nId" name="nId" value="2865812" />
+            <input type="hidden" id="nEdad" name="nEdad" value="90" />
+            <input
+              type="hidden"
+              id="cPaciente"
+              name="cPaciente"
+              value="LEOVIGILDO BERNAL ANDRADE"
+            />
+            <div class="media">
+              <div class="align-self-center mr-3 mb-3">
+                <i class="fas fa-heartbeat fa-5x"></i>
+              </div>
+              <div class="media-body">
+                <h4><span id="cNombre">LEOVIGILDO BERNAL ANDRADE</span></h4>
+                <span id="cTipoIdMostrar">C</span> -
+                <span id="nIdMostrar">2865812</span><br />
+                <span id="cEdad">90 Años, 1 Meses, 14 Días</span><br />
+                <span id="cUbicacion">4P - 0402</span>
+              </div>
+            </div>
+            <hr>
+            <div class="row align-items-end">
+              <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                <div class="form-group">
+                  <label for="lastName"><b>Dieta Recetada</b></label
+                  ><select
+                    class="form-control form-control-lg"
+                    id="dt"
+                    name="dt"
+                    required=""
+                  >
+                    <option></option>
+                    <option value="0">Blanda</option>
+                    <option value="1">Blanda Hipoglúcida</option>
+                    <option value="2">Blanda Hipograsa</option>
+                    <option value="3">Blanda Hipograsa Hipoglúcida</option>
+                    <option value="4">Blanda Hipograsa Hiposodica Hipoglúcida</option>
+                    <option value="5">Blanda hiposodica</option>
+                    <option value="6">Blanda Hiposodica Hipoglúcida</option>
+                    <option value="7">Blanda Hiposodica Hipograsa</option>
+                    <option value="8">Cena Ligera</option>
+                    <option value="9">Complementaria 1</option>
+                    <option value="10">Complementaria 2</option>
+                    <option value="11">Complementaria 3</option>
+                    <option value="12">Complementaria 4</option>
+                    <option value="13">Compota</option>
+                    <option value="14">Compota + Licuado</option>
+                    <option value="15">Compota + Licuado + Jugo</option>
+                    <option value="16">Hipoglúcida</option>
+                    <option value="17">Hipoglúcida Hipograsa</option>
+                    <option value="18">Hipograsa</option>
+                    <option value="19">Hipograsa Hiposodica</option>
+                    <option value="20">Hipograsa Hiposodica Hipoglúcida</option>
+                    <option value="21">Hiposodica</option>
+                    <option value="22">Hiposodica Hipoglúcida</option>
+                    <option value="23">Jugo de Granadilla</option>
+                    <option value="24">Licuado</option>
+                    <option value="25">Liquida Clara</option>
+                    <option value="26">Liquida Clara Hipoglúcida</option>
+                    <option value="27">Liquida Clara Hiposodica</option>
+                    <option value="28">Liquida Total</option>
+                    <option value="29">Liquida Total Espesa</option>
+                    <option value="30">Liquida Total Espesa Hipoglúcida</option>
+                    <option value="31">Liquida Total Espesa Hiposodica</option>
+                    <option value="32">Liquida Total Hipoglúcida</option>
+                    <option value="33">Nada Vía Oral</option>
+                    <option value="34">Normal</option>
+                    <option value="35">Otros</option>
+                    <option value="36">Paleta</option>
+                    <option value="37">Protocolo Cirugía Bariática</option>
+                    <option value="38">Semiblanda</option>
+                    <option value="39">Semiblanda Hipoglúcida</option>
+                    <option value="40">Semiblanda Hipograsa</option>
+                    <option value="41">Semiblanda Hiposodica</option>
+                    <option value="42">Semiblanda Hiposodica Hipoglúcida</option>
+                    <option value="43">Té</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="lastName"><b>Dr.</b></label
+                  ><select
+                    class="form-control form-control-lg"
+                    id="dr"
+                    name="dr"
+                    required=""
+                  >
+                    <option></option>
+                    <option value="0">Acevedo Gustavo</option>
+                    <option value="1">Bejarano Leon Jaime Fabian</option>
+                    <option value="2">Enfermera Jefe Jimena</option>
+                    <option value="3">Estudiante Residente Medico</option>
+                    <option value="4">Farfan Rosas Gonzalo Andres</option>
+                    <option value="5">Penagos Neuta Alba Jimena</option>
+                    <option value="6">Pruebas Revision Auditoria</option>
+                    <option value="7">Romero Fonseca Dario</option>
+                    <option value="8">Sarquis Sadd Tonny</option>
+                    <option value="9">Talero Romero Hernan Dario</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                <div class="mb-3 mx-5 h-100">                        
+                  <label for="mensaje">Observaciones</label>
+                  <textarea class="form-control" name="mensaje" id="mensaje"></textarea>                        
+                  </div>
+              </div>
+            </div>
+              <br>
+              <hr>
+            
+              <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                <div class="form-group">
+                  <label for="lastName"><b>Temperatura (°C)</b></label
+                  ><input
+                    type="number"
+                    class="form-control form-control-lg"
+                    id="t"
+                    name="t"
+                    placeholder=""
+                    value=""
+                    required=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                <div class="form-group">
+                  <label for="lastName"><b>Presión arterial sistólica</b></label
+                  ><input
+                    type="number"
+                    class="form-control form-control-lg"
+                    id="tas"
+                    name="tas"
+                    placeholder=""
+                    value=""
+                    required=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                <div class="form-group">
+                  <label for="lastName"
+                    ><b>Presión arterial diastólica</b></label
+                  ><input
+                    type="number"
+                    class="form-control form-control-lg"
+                    id="tad"
+                    name="tad"
+                    placeholder=""
+                    value=""
+                    required=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                <div class="form-group">
+                  <label for="lastName"><b>Frecuencia cardíaca</b></label
+                  ><input
+                    type="number"
+                    class="form-control form-control-lg"
+                    id="fc"
+                    name="fc"
+                    placeholder=""
+                    value=""
+                    required=""
+                  />
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                <div class="form-group">
+                  <label for="lastName"><b>Nivel de conciencia</b></label
+                  ><select
+                    class="form-control form-control-lg"
+                    id="nc"
+                    name="nc"
+                    required=""
+                  >
+                    <option></option>
+                    <option value="0">No Valorable</option>
+                    <option value="1">Alerta</option>
+                    <option value="4">Somnoliento</option>
+                    <option value="5">Estuporoso</option>
+                    <option value="6">Coma</option>
+                    <option value="7">Sedado</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                <div class="form-group">
+                  <label for="lastName"
+                    ><b>Necesita O<sub>2</sub> suplementario</b></label
+                  ><select
+                    class="form-control form-control-lg"
+                    id="o2sp"
+                    name="o2sp"
+                    required=""
+                  >
+                    <option></option>
+                    <option value="0">NO</option>
+                    <option value="1">SI</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <hr />
+            <div class="form-group row">
+              <div class="col-12">
+                <button
+                  id="btnGuardar"
+                  type="submit"
+                  class="btn btn-outline-secondary btn-lg btn-block"
+                >
+                  Guardar
+                </button>
+              </div>
+            </div>
+          </form>
+          <script>
+            $(document).ready(function () {
+              $("#registroSignosForm").validate({
+                rules: {
+                  ingreso: {
+                    required: true,
+                    digits: true,
+                  },
+                  fr: { required: true, digits: true, min: 4, max: 90 },
+                  so2: { required: true, digits: true, min: 0, max: 100 },
+                  t: { required: true, range: [31, 42.99], step: 0.01 },
+                  tas: { required: true, digits: true, min: 0, max: 300 },
+                  tad: { required: true, digits: true, min: 0, max: 150 },
+                  fc: { required: true, digits: true, min: 0, max: 300 },
+                },
+                errorElement: "div",
+                errorPlacement: function (error, element) {
+                  // Add the `help-block` class to the error element
+                  error.addClass("invalid-tooltip");
+
+                  if (element.prop("type") === "checkbox") {
+                    error.insertAfter(element.parent("label"));
+                  } else {
+                    error.insertAfter(element);
+                  }
+                },
+                highlight: function (element, errorClass, validClass) {
+                  $(element).addClass("is-invalid").removeClass("is-valid");
+                },
+                unhighlight: function (element, errorClass, validClass) {
+                  $(element).addClass("is-valid").removeClass("is-invalid");
+                },
+                submitHandler: function () {
+                  $("#btnGuardar").attr("disabled", true);
+                  $.ajax({
+                    type: "POST",
+                    url: "vista-signos/guardarSignos",
+                    data: $("#registroSignosForm").serialize(),
+                  })
+                    .done(function (response) {
+                      $("#registroSignosInfo").html(response);
+                      $("#modalSignosGuardar").on(
+                        "hidden.bs.modal",
+                        function () {
+                          $("#registroSignosInfo")
+                            .html("")
+                            .removeClass("alert")
+                            .removeClass("alert-warning")
+                            .removeAttr("role");
+                          $("#registroSignosForm")[0].reset();
+                          $(location).attr("href", "modulo-signos&seccion=4P");
+                        }
+                      );
+                      $("#modalSignosGuardar").modal("show");
+                    })
+                    .fail(function (data) {
+                      $("#registroSignosInfo")
+                        .html(
+                          '<i class="fa fa-exclamation-triangle"></i> Se presento un error al guardar el ingreso'
+                        )
+                        .addClass("alert")
+                        .addClass("alert-danger")
+                        .attr("role", "alert");
+                    });
+                },
+              });
+            });
+          </script>
+        </div>
+        <div class="p-3"><div id="registroSignosInfo"></div></div>
+        <div class="card-footer text-muted">
+          <p>
+            La información aquí registrada se usara para determina el grado de
+            enfermedad de un paciente para la detección temprana del deterioro
+            clínico y la posible necesidad de un mayor nivel de atención.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="vista-signos/js/scripts.js"></script>
+    <div
+      id="warningSession"
+      class="alert alert-danger fixed-top m-3 d-none text-center"
+      data-maxlifetime="57600"
+      data-lifetime="0"
+      data-lifetimestatus="0"
+    >
+      Atención, su sesión a caducado hace <span id="warningSessionBody"></span>,
+      Presione a la vez las teclas <kbd>CTRL</kbd> y <kbd>F5</kbd> en su
+      teclado. Para ir al inicio haga
+      <a
+        alt="Inicio"
+        href="index"
+        class="text-danger font-weight-bold"
+        data-toggle="tooltip"
+        data-placement="right"
+        title=""
+        data-original-title="Ir al Inicio"
+        >clic Aquí</a
+      >
+    </div>
+    <script>
+      $(function () {
+        $('[data-toggle="tooltip"]').tooltip();
+        $("form").attr("autocomplete", "off");
+
+        setPageMaxLifeTime();
+
+        setInterval(function () {
+          setPageMaxLifeTime();
+        }, 1000);
+
+        function setPageMaxLifeTime() {
+          if ($("#warningSession").length) {
+            var lnLifeTimeStatus = parseInt(
+              $("#warningSession").data("lifetimestatus")
+            );
+            var lnMaxLifeTime = parseInt(
+              $("#warningSession").data("maxlifetime")
+            );
+
+            if (lnMaxLifeTime > 0) {
+              var lnLifeTime = parseInt($("#warningSession").data("lifetime"));
+              var lnExpiro = parseInt(lnLifeTime / 60);
+
+              $("#warningSession").data("lifetime", lnLifeTime + 1);
+              if (lnMaxLifeTime <= lnLifeTime) {
+                $("#warningSession").data("lifetimestatus", 1);
+                $("#warningSession").removeClass("d-none").addClass("d-block");
+                $("#warningSessionBody").html(lnExpiro + " minutos");
+              }
+            }
+          }
+        }
+      });
+
+      /*if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('publico-js/hcw-service-worker.js');
+}*/
+    </script>
+    <!-- Html -->
+    <footer class="mt-4 p-4 bg-light">
+      <div class="row justify-content-center">
+        <div class="col-sm-12 col-md-6 text-center text-md-left">
+          <b>2024 © Fundación Clínica Shaio</b><br /><small
+            >Grupo de Desarrollo, TI. 2018 | IP Clíente 172.30.3.38 | HOST
+            hcwd.shaio.org | SIGNOS</small
+          >
+        </div>
+        <div class="col-sm-12 col-md-6 text-center text-md-right">
+          soporte@shaio.org<br />+57-1-5938210 ext 2173
+        </div>
+      </div>
+    </footer>
+    <script>
+      sessionStorage.setItem(
+        "userhcweb",
+        "eyJ1c3VhcmlvIjoiU0lBTkRBTEQiLCJ0aXBvIjo3LCJlc3BlY2lhbGlkYWQiOiI5OTkifQ=="
+      );
+      sessionStorage.setItem(
+        "coockie",
+        "Y29vY2tpZT0veDBlZDZhMGU0LTY3YzktNGJjZi04ZmNiLTk0ZWI3ZTM4NGVmYXkv"
+      );
+    </script>
+  </body>
+</html>

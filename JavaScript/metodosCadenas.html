@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Metodos y propiedades para Cadenas de texto</title>
+  </head>
+  <body>
+    <script>
+      var nombre = "Alexander Natanael";
+      var numeroCaracteres = nombre.length;
+      document.write(
+        nombre + " tiene " + numeroCaracteres + " caracteres " + "<br>"
+      );
+
+      var segundonombre = nombre.substring(10, 18);
+      document.write(segundonombre + "<br>");
+
+      var segundonombre = nombre.substr(10, 8);
+      document.write(segundonombre + "<br>");
+
+      var nuevoNombre = nombre.replace("Aleander", "Antonella");
+      document.write(nuevoNombre + "<br>");
+
+      document.write(nombre.toUpperCase() + "<br>");
+      document.write(nombre.toLowerCase() + "<br>");
+
+      var posicion = nombre.indexOf("e");
+      document.write(posicion + "<br>");
+
+      var posicion = nombre.lastIndexOf("e");
+      document.write(posicion + "<br>");
+    </script>
+  </body>
+</html>

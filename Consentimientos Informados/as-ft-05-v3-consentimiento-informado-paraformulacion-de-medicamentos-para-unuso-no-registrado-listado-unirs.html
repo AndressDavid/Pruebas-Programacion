@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<style type="text/css">
+    @page {
+    size: 21.59cm 27.94cm;
+    margin-left: 1.62cm;
+    margin-right: 1.62cm;
+    margin-top: 1.01cm;
+    margin-bottom: 0.49cm;
+    }
+ </style>
+</head>
+<body style="font-family:'Arial';margin:10px;padding:10px;font-size:10pt;">
+    <!--Encabezado documento-->
+   
+
+    <table
+    cellspacing="0"
+    cellpadding="0"
+    style="
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid #000000;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    max-height:200px;
+    "
+    >
+    <tbody>
+    <tr>
+        <td rowspan="2" style="border: 1px solid #000000; width: 10%; text-align: center; background-color:lightgray;">
+            %logoShaio
+        </td>
+        <td rowspan="2" style="border: 1px solid #000000; width: 70%; text-align: center; background-color:lightgray;">
+            <h3>CONSENTIMIENTO INFORMADO PARA FORMULACIÓN DE MEDICAMENTOS PARA UN USO NO REGISTRADO “LISTADO UNIRS”</h3>
+        </td>
+        <td style="border: 1px solid #000000; width: 20%; text-align: center; background-color:lightgray;">
+            <p style="text-align: left; padding-left: 5px;">Código: AS-FT-05 </p>
+            <hr style="height:1px;border:none;color:#333;background-color:#333;" />
+            <p style="font-size: 11pt; text-align: left; padding-left: 5px;" size="2">Versión: 3</p>
+        </td>
+    </tr>
+    </tbody>
+    </table>
+    
+
+    <table
+    cellspacing="0"
+    cellpadding="0"
+    style="
+    width: 100%;
+    margin: 0 auto;
+    border: 1px solid #000000;
+    border-collapse: collapse;
+    margin-bottom: 20px;">
+    <tbody>
+    <tr>
+        <td rowspan="2" style="border: 1px solid #000000; width: 80%">
+            <p style="padding-left: 5px; font-weight: bold;">Nombres y apellidos completos:  <span style="font-weight: normal ;"><u>%paciente_nombre</u></span></p>
+            <p style="padding-left: 5px; font-weight: bold">Tipo y número de identificación: <span style="font-weight: normal;"><u>%paciente_tipo_identificacion-%paciente_identificacion</u></span></p>
+        </td>
+        <td rowspan="2" style="border: 1px solid #000000; width: 20%">
+            <p style="padding-left: 5px; font-weight: bold;">Fecha: <span style="font-weight: normal;"><u>%fecha</u></span></p>
+            <hr style="height:1px;border:none;color:#333;background-color:#333;" />
+            <p style="padding-left: 5px; font-weight: bold;">Hora: <span style="font-weight: normal;"><u>%hora</u></span></p>
+        </td>
+    </tr>
+    </tbody>
+    </table>
+
+    <p style="text-align: justify;">
+
+        <b>INFORMACIÓN GENERAL</b> 
+    </p>
+    
+    <p style="text-align: justify;">
+        Los medicamentos, antes de ser comercializados en Colombia deben ser aprobados por el Instituto Nacional de Vigilancia de Medicamentos y Alimentos (INVIMA), organismo que define los usos principales para los que se aprueba su formulación.
+    </p>
+    <p style="text-align: justify;">
+        Esta aprobación se realiza con base en la revisión de los estudios clínicos que justifican su uso y demuestran su efectividad y seguridad. Sin embargo, en algunos casos aparece evidencia posterior que muestra efectividad del mismo medicamento en el tratamiento de otras enfermedades, lo que ocasiona que los medicamentos a pesar de contar con un respaldo científico y estudios de seguridad clínica que recomiendan su uso, no puedan ser formulados ni reconocidos por las Entidades Administradoras de Planes de Beneficios, por encontrarse fuera de las indicaciones terapéuticas aprobadas por el INVIMA.
+    </p>
+    <p style="text-align: justify;">
+        Los medicamentos referidos, esto es, en los que aparece evidencia científica que muestra efectividad para un uso diferente al aprobado por el INVIMA, se encuentran discriminados en el listado UNIRS. Al respecto, se señala que por disposición normativa, establecida en la Resolución 1885 de 2018,<b><em>deberá existir consentimiento informado</em></b>,  en el cual se ilustre sobre la necesidad de utilizar estos medicamentos. 
+    </p>
+    <p style="text-align: justify;">
+        En su caso, su médico tratante, después de una evaluación juiciosa de las alternativas terapéuticas disponibles para el tratamiento de su condición de salud <u>%condicion_salud</u>, ha considerado que podría ser recomendable el uso del medicamento <u>%medicamento_formulado</u>, aun cuando se  trata de una indicación diferente a la autorizada por el INVIMA. Para proceder con su formulación y administración se requiere contar con su consentimiento expreso e informado.
+    </p>
+    
+    <p style="text-align: justify;">
+        
+        <b>JUSTIFICACIÓN DEL TRATAMIENTO</b> 
+    </p>
+    
+    <p style="text-align: justify;">
+        Las razones clínicas que justifican la formulación del medicamento <u>%medicamento_formulado</u> para un uso no autorizado por el INVIMA son las siguientes: <u>%justificacion</u>
+
+    </p>
+    
+    <p style="text-align: justify;">
+        
+        <b>RIESGOS DEL TRATAMIENTO</b> 
+    </p>
+    
+    <p style="text-align: justify;">
+        Antes de considerar la opción de formular el tratamiento propuesto, su médico ha hecho una valoración de los potenciales riesgos y beneficios de su uso, determinando que los beneficios esperados superan los riesgos previsibles; sin embargo, dado que no está exento de complicaciones o efectos indeseables, es importante que usted los conozca y acepte: <u>%riesgos_previsibles</u>
+
+    </p>
+    
+    <p style="text-align: justify;">
+        
+        <b>ALTERNATIVAS TERAPÉUTICAS</b> 
+    </p>
+    
+    <p style="text-align: justify;">
+        Las opciones disponibles, efectivas y seguras para el tratamiento de su condición de salud son: <u>%alternativas_terapeuticas</u>
+
+    </p>
+    
+    <p style="text-align: justify;">
+        Sin embargo no se recomiendan (   ) o no se utilizan (  ) en su caso específico por las  siguientes razones: <u>%razones_no_uso_alternativas</u>
+
+    </p>
+    
+    <p style="text-align: justify;">
+        Si después de leer este documento tiene inquietudes adicionales no dude en preguntarle al médico que está a cargo de su tratamiento, quien le atenderá con el mayor gusto.
+
+    </p>
+    
+    <p style="text-align: justify;">
+        Finalmente se le informa que usted puede rechazar el tratamiento sugerido o suspenderlo en cualquier tiempo,  asumiendo los inconvenientes que esta determinación pueda ocasionar y se recomienda avisar al médico en el menor tiempo posible de su decisión.
+
+    </p>
+
+      
+          <table
+          cellspacing="0"
+          cellpadding="0"
+          width="100%"
+          style="border-collapse: collapse">
+     <tr>
+         <th colspan="2" style="border: 1px solid #000000;background-color:lightgray; padding: 5px;">PACIENTE</th>
+      </tr>
+      <tr>
+        <td colspan="2" style="border: 1px solid #000000;padding: 5px;">
+            <p style="text-align: justify;">Yo <u>%paciente_nombre</u> identificado con documento de identificación No. <u>%paciente_identificacion</u> dejo constancia que el (la) Doctor (a) <u>%medico_nombre</u> me ha explicado la naturaleza y finalidad del tratamiento propuesto con el medicamento <u>%medicamento_formulado</u> así como sus ventajas, molestias, posibles riesgos, complicaciones y alternativas. De igual forma, dejo constancia que comprendo las implicaciones médicas que tiene la utilización del tratamiento para un uso no autorizado por el INVIMA. Manifiesto que he leído este documento informativo, cuyo contenido he comprendido, que se me ha dado la oportunidad de hacer preguntas, las cuales han sido contestadas satisfactoriamente y que se me ha explicado que no es posible garantizar los resultados esperados con la r formulación del tratamiento.</p>
+            <p style="text-align: justify;">Con base en lo anterior, considero cumplida a satisfacción la obligación impuesta al personal médico a través de la Ley  Ética Médica (Artículo 15 de la Ley 23 de 1981) y demás disposiciones legales relacionadas con la obtención del consentimiento informado del paciente y me encuentro en capacidad de decidir y autorizar – de manera libre e ilustrada – para que se proceda de conformidad.</p>
+            <p style="text-align: justify;">Finalmente manifiesto que he leído y comprendido perfectamente el texto anterior y que todos los espacios en blanco han sido diligenciados antes de mi firma y que he expresado mi consentimiento de forma libre y consciente.</p>
+        </td>
+     </tr>
+     <tr valign="top">
+        <td style="border: 1px solid #000000;padding: 5px;  width: 75%;"><p style="padding-left: 5px; font-weight: bold;">Nombres y apellidos completos:  <br><span style="font-weight: normal;"><u>%paciente_nombre</u></span></p></td>
+        <td rowspan="2" style="border: 1px solid #000000;padding: 5px;"><p style="padding-left: 5px; font-weight: bold;">Firma: <span style="font-weight: normal;">%ImgFirmas1</span></p></td>
+     </tr>
+     <tr valign="top">
+        <td style="border: 1px solid #000000;padding: 5px;  width: 75%;"><p style="padding-left: 5px; font-weight: bold">Tipo y número de documento de identidad: <br><span style="font-weight: normal;"><u>%paciente_tipo_identificacion-%paciente_identificacion</u></span></p></td>
+     </tr>
+
+      
+    </table>   
+ 
+ 
+ 
+     <table
+      cellspacing="0"
+      cellpadding="0"
+      width="100%"
+      style="border-collapse: collapse; margin-top: 15px;">
+      <tr>
+         <th colspan="2" style="border: 1px solid #000000;background-color:lightgray; padding: 5px;">REPRESENTANTE (en caso de paciente menor de edad y/o con impedimento clínico)</th>
+      </tr>
+      <tr>
+         <td colspan="2" style="border: 1px solid #000000;padding: 5px;">
+            <P style="text-align: justify;">
+                Yo <u>%representante_nombre</u>, identificado con <u>%representante_tipo_identificacion</u> número <u>%representante_identificacion</u>, como representante del paciente <u>%paciente_nombre</u> en calidad de <u>%parentesco</u>,  declaro que he leído y comprendido perfectamente el texto anterior y que todos los espacios en blanco han sido diligenciados antes de mi firma y que he expresado mi consentimiento de forma libre y consciente.
+            </P>
+         </td>
+      </tr>
+      <tr valign="top">
+        <td style="border: 1px solid #000000;padding: 5px;  width: 75%;"><p style="padding-left: 5px; font-weight: bold;">Nombres y apellidos completos:  <br><span style="font-weight: normal;"><u>%paciente_nombre</u></span></p></td>
+        <td rowspan="2" style="border: 1px solid #000000;padding: 5px;"><p style="padding-left: 5px; font-weight: bold;">Firma: <span style="font-weight: normal;">%ImgFirmas2</span></p></td>
+     </tr>
+     <tr valign="top">
+        <td style="border: 1px solid #000000;padding: 5px;  width: 75%;"><p style="padding-left: 5px; font-weight: bold">Documento de identidad: <br><span style="font-weight: normal;"><u>%paciente_tipo_identificacion-%paciente_identificacion</u></span></p></td>
+     </tr>
+   </table>
+ 
+   <table
+   cellspacing="0"
+   cellpadding="0"
+   width="100%"
+   style="border-collapse: collapse; margin-top: 15px;">
+   <tr>
+      <th colspan="2" style="border: 1px solid #000000;background-color:lightgray; padding: 5px;">MÉDICO TRATANTE</th>
+   </tr>
+   <tr>
+    <td colspan="2" style="border: 1px solid #000000;padding: 5px;">
+        <p style="text-align: justify;">Dejo constancia que he explicado la naturaleza, propósitos, ventajas, riesgos y alternativas del tratamiento con el medicamento <u>%medicamento_formulado</u>, el cual no cuenta con autorización por el INVIMA para el uso propuesto. De la misma forma, dejo constancia que esta decisión médica se soporta en una evaluación rigurosa de los potenciales riesgos y beneficios para el paciente y de la evidencia científica que soporta su uso.  Así mismo, certifico que he explicado en detalle el contenido del presente documento y que he contestado todas las preguntas que el paciente o persona responsable me han formulado.</p>
+    </td>
+ </tr>
+   <tr valign="top">
+    <td style="border: 1px solid #000000;padding: 5px;  width: 75%;"><p style="padding-left: 5px; font-weight: bold;">Nombres y apellidos completos:  <br><span style="font-weight: normal;"><u>%paciente_nombre</u></span></p></td>
+    <td rowspan="2" style="border: 1px solid #000000;padding: 5px;"><p style="padding-left: 5px; font-weight: bold;">Firma: <span style="font-weight: normal;">%ImgFirmas3</span></p></td>
+   </tr>
+   <tr valign="top">
+    <td style="border: 1px solid #000000;padding: 5px;  width: 75%;"><p style="padding-left: 5px; font-weight: bold">Registro Médico: <br><span style="font-weight: normal;"><u>%rm_medico</u></span></p></td>
+   </tr>
+ </table>
+ 
+ <div style="border: 1px solid #000000; margin-top: 10px;">
+    <p style="text-align: justify; padding: 5px;">
+        La Fundación Abood Shaio es una institución prestadora de servicio de salud. De conformidad con literal (e) del artículo 6 y literal (d) del artículo 10 de la ley 1581 del 2012, le informa que los datos de la historia clínica pueden ser usados para fines científicos, académicos y estadísticos. Así mismo y de manera general, autorizo a que todos los datos sean manejados de acuerdo con la política de privacidad y tratamiento de datos personales, la cual se encuentra en <a href="https://www.shaio.org/politica-tratamiento-datos-personales">https://www.shaio.org/politica-tratamiento-datos-personales.</a>.
+    </p>
+ </div>
+ </body>
+ </html>
